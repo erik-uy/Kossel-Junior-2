@@ -190,7 +190,7 @@
  *
  * :{ 0:'No power switch', 1:'ATX', 2:'X-Box 360' }
  */
-#define POWER_SUPPLY 1
+#define POWER_SUPPLY 2
 
 #if POWER_SUPPLY > 0
   // Enable this option to leave the PSU off at startup.
@@ -541,7 +541,7 @@
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 500, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 500, 40 }
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
@@ -549,7 +549,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2[, E3]]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 9000, 10000 }
+#define DEFAULT_MAX_ACCELERATION      { 9000, 9000, 9000, 5000 }
 
 /**
  * Default Acceleration (change/s) change = mm/s
@@ -560,7 +560,7 @@
  *   M204 T    Travel Acceleration
  */
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
+#define DEFAULT_RETRACT_ACCELERATION  2000    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   3000    // X, Y, Z acceleration for travel (non printing) moves
 
 /**

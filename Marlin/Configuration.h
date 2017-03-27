@@ -450,7 +450,7 @@
   #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-(DELTA_EFFECTOR_OFFSET)-(DELTA_CARRIAGE_OFFSET))
 
   // Print surface diameter/2 minus unreachable space (avoid collisions with vertical towers).
-  #define DELTA_PRINTABLE_RADIUS 64.0
+  #define DELTA_PRINTABLE_RADIUS 77.0 //128
 
   // Delta calibration menu
   // uncomment to add three points calibration menu option.
@@ -570,10 +570,10 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 20.0
-#define DEFAULT_YJERK                 20.0
-#define DEFAULT_ZJERK                 20.0 // Must be same as XY for delta
-#define DEFAULT_EJERK                  5.0
+#define DEFAULT_XJERK                 15.0
+#define DEFAULT_YJERK                 15.0
+#define DEFAULT_ZJERK                 15.0 // Must be same as XY for delta
+#define DEFAULT_EJERK                 10.0
 
 
 //===========================================================================
